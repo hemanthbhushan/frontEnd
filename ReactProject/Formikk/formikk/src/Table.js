@@ -3,7 +3,7 @@ import './Table.css'
 
 const Table = ({userList,setUserList,handleEdit}) => {
 
-   const[updateList,setUpdateList] = useState(null);
+  //  const[updateList,setUpdateList] = useState(null);
    
   function removeUser(key){
     const removeUserList = userList.filter((element,id)=>{

@@ -12,7 +12,7 @@ const SignupForm = () => {
   }
   const handleEdit = (key) => {
     const editedValue = userList.find((element,id)=>{
-          return id===key
+          if(id===key) return id
         })
 
      formik.setFieldValue("firstName", editedValue.firstName)
